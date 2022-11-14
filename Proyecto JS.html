@@ -8,27 +8,83 @@
 </head>
 <body>
     <script>
-        var nombre1 = 'Abril1';
+        var nombre1 = 'Abril1'; //asigne los nombres por numeros
             nombre2 = 'Abril2';
             nombre3 = 'Abril3';
         
-            console.log(nombre3);
+            console.log(nombre3); //muestro por consola el nombre 3
             
         var numeroUno = 85;
             numeroDos = 32;
             resultado = numeroUno + numeroDos;
 
-            console.log(resultado);
+            console.log(resultado); //asigno edades a las siguientes variables
             let edad_de_Pedrito = 18;
             let edad_de_Maria = 17;
             let edad_de_Luis = 15;
             let edad_de_Abril = 20;
 
-            console.log (edad_de_Pedrito);
+            console.log (edad_de_Pedrito); //muestro por consola las siguientes edades
             console.log (edad_de_Maria);
             console.log (edad_de_Luis);
-            console.log (edad_de_Abril);
-            
+            console.log (edad_de_Abril);  
+
+            //recorro un array
+            let arr = [3, 4, 5, 6];
+
+            let modifiedArr = arr.map(function(element){
+             return element *3;
+            });
+
+            console.log(modifiedArr); // [9, 12, 15, 18]
+
+            //He creado un array con las comidas del día y las estoy iterando con forEach para mostrar su índice y valor en consola.
+            const comidas = ['Desayunar', 'Almorzar', 'Comer', 'Merendar', 'Cenar'];
+                comidas.forEach(function(comida, index) {
+               console.log(`${index} : ${comida}`);
+            });
+          
+            let mostrarsuma = sumatoria(); 
+            let mostrarresta = resta(); 
+            let mostrarmulti = multiplicacion(); 
+            let mostrardivi=division(); 
+             //#endregion 
+
+            //#region Región de funciones 
+            function sumatoria(){ 
+                var num1=10; 
+                var num2=9; 
+               return num1 + num2; 
+            } 
+  
+            function resta(){ 
+                var num1=10; 
+                var num2=9; 
+                return num1 - num2; 
+            } 
+  
+            function multiplicacion(){ 
+                var num1=10; 
+                var num2=9; 
+                return num1 * num2; 
+            } 
+  
+            function division(){ 
+               var num1=10; 
+               var num2=9; 
+               return num1/num2; 
+             } 
+          
+           //#endregion 
+            //#region Región de ConsoleLog 
+                console.log(mostrarsuma); 
+                console.log(mostrarresta); 
+                console.log(mostrarmulti); 
+                console.log(mostrardivi); 
+            //#endregion
+
+           
+
     </script>
 </body>
 </html>
